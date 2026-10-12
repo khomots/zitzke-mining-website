@@ -94,7 +94,7 @@ export default function Home() {
           {/* Full-width mining photograph */}
           <div className="absolute inset-0 -z-20">
             <img
-              src="/images/Homepage-hero.jpg"
+              src="/images/Home.png"
               alt="Mining haul truck operating inside an open-pit mine"
               className="h-full w-full object-cover object-center"
             />
@@ -176,7 +176,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="solutions" className="mx-auto max-w-7xl px-6 py-24">
+      <section
+          id="solutions"
+          className="relative bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(8,21,34,0.82), rgba(8,21,34,0.82)), url('/images/safe-tech-fire.webp')",
+          }}
+        >
+        <div className="mx-auto max-w-7xl px-6 py-24 text-white">
         <div className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-orange-600">
             What we do
@@ -216,6 +224,7 @@ export default function Home() {
               </a>
             </article>
           ))}
+          </div>
         </div>
       </section>
 
@@ -245,6 +254,37 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section
+        className="relative flex min-h-[440px] items-center bg-cover bg-center text-white"
+        style={{
+          backgroundImage: "url('/images/dafo-mining.jpeg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-[#101b27]/75" />
+
+        <div className="relative mx-auto w-full max-w-7xl px-6 py-20">
+          <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
+            Mining Vehicle Fire Protection
+          </p>
+
+          <h2 className="mt-4 max-w-2xl text-4xl font-black">
+            Protecting mining vehicles and equipment.
+          </h2>
+
+          <p className="mt-5 max-w-xl leading-8 text-slate-200">
+            Explore fire detection and suppression solutions
+            designed for demanding mining environments.
+          </p>
+
+          <a
+            href="#contact"
+            className="mt-8 inline-flex rounded-md bg-orange-500 px-6 py-4 font-bold hover:bg-orange-600"
+          >
+            Enquire About Our Solutions →
+          </a>
         </div>
       </section>
 
