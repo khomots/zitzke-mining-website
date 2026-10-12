@@ -8,7 +8,7 @@ const solutions = [
     description:
       "Automatic and manual fire detection and suppression solutions for mining vehicles and mobile equipment.",
     image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80",
+      "/images/Vehicle-Fire-Protection.jpg",
   },
   {
     number: "02",
@@ -16,7 +16,7 @@ const solutions = [
     description:
       "Fire suppression solutions designed for conveyor-belt applications in demanding mining environments.",
     image:
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80",
+      "/images/Conveyor-Fire-Suppression.jfif",
   },
   {
     number: "03",
@@ -24,7 +24,7 @@ const solutions = [
     description:
       "Fire protection solutions for underground mining, including water-spray systems.",
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80",
+      "/images/Underground-Fire-Protection.jpg",
   },
   {
     number: "04",
@@ -32,7 +32,7 @@ const solutions = [
     description:
       "Fire detection systems, instrumentation, control and real-time equipment monitoring solutions.",
     image:
-      "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=900&q=80",
+      "/images/fire-detection.jfif",
   },
 ];
 
@@ -86,94 +86,78 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f6f7] text-[#17212b]">
       <Navbar />
-
-      <section
+      
+        <section
           id="home"
-          className="relative overflow-hidden bg-[#101b27] text-white"
+          className="relative isolate flex min-h-[650px] items-center overflow-hidden bg-[#0b1724] text-white lg:min-h-[760px]"
         >
-        <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full border-[50px] border-white/5" />
-        <div className="absolute bottom-0 right-1/3 h-1 w-40 bg-orange-500" />
-
-        <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 py-24 md:grid-cols-2 md:py-32">
-          <div>
-            <p className="mb-6 text-sm font-bold uppercase tracking-[0.25em] text-orange-400">
-              Fire protection for the mining industry
-            </p>
-
-            <h1 className="max-w-2xl text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl">
-              Protecting people.
-              <span className="block text-orange-500">Protecting equipment.</span>
-              Supporting safer operations.
-            </h1>
-
-            <p className="mt-7 max-w-xl text-lg leading-8 text-slate-300">
-              Specialist fire protection and safety solutions for surface and
-              underground mining environments.
-            </p>
-
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a
-                href="#solutions"
-                className="rounded-md bg-orange-500 px-6 py-4 font-bold text-white hover:bg-orange-600"
-              >
-                Explore Our Solutions <span aria-hidden="true">→</span>
-              </a>
-              <a
-                href="#contact"
-                className="rounded-md border border-white/30 px-6 py-4 font-bold text-white hover:bg-white/10"
-              >
-                Contact Our Team
-              </a>
-            </div>
-
-            <p className="mt-8 text-sm text-slate-400">
-              Established in 2021 · Mining fire protection expertise
-            </p>
+          {/* Full-width mining photograph */}
+          <div className="absolute inset-0 -z-20">
+            <img
+              src="/images/Homepage-hero.jpg"
+              alt="Mining haul truck operating inside an open-pit mine"
+              className="h-full w-full object-cover object-center"
+            />
           </div>
 
-          
-          <div className="relative min-h-[350px] overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[#273746] via-[#1c2935] to-[#111a23] p-8 shadow-2xl md:min-h-[430px]">
-            <img
-                src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=85"
-                alt="Heavy industrial vehicle"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#101b27] via-[#101b27]/60 to-[#101b27]/20" />
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute right-[-40px] top-10 h-64 w-64 rounded-full border-[35px] border-orange-500" />
-              <div className="absolute bottom-8 left-8 h-40 w-40 rounded-full border-[20px] border-white/20" />
-            </div>
+          {/* Dark overlay keeps the text readable */}
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#081522]/95 via-[#081522]/85 to-[#081522]/40" />
 
-            <div className="relative flex h-full min-h-[300px] flex-col justify-between md:min-h-[380px]">
-              <div>
-                <span className="inline-flex rounded-full border border-orange-400/40 bg-orange-500/10 px-4 py-2 text-xs font-bold uppercase tracking-widest text-orange-300">
-                  Safety first
-                </span>
+          {/* Orange industrial accent */}
+          <div className="absolute left-0 top-0 h-full w-1 bg-orange-500" />
+
+          <div className="mx-auto w-full max-w-7xl px-6 py-24 sm:px-10 lg:py-32">
+            <div className="max-w-3xl">
+              <div className="mb-8 flex items-center gap-3">
+                <span className="h-[2px] w-10 bg-orange-500" />
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-orange-400 sm:text-sm">
+                  Fire Protection for the Mining Industry
+                </p>
               </div>
 
-              <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-orange-300">
-                  Built around protection
-                </p>
-                <h2 className="mt-3 max-w-md text-3xl font-black leading-tight text-white sm:text-4xl">
-                  Ready for the demands of mining.
-                </h2>
-                <p className="mt-4 max-w-md leading-7 text-slate-300">
-                  Fire detection, suppression and safety support for surface and
-                  underground mining environments.
-                </p>
+              <h1 className="text-4xl font-black leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
+                Protecting People.
+                <span className="mt-2 block text-orange-500">
+                  Protecting Equipment.
+                </span>
+                <span className="mt-2 block">
+                  Supporting Safer Operations.
+                </span>
+              </h1>
+
+              <p className="mt-8 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">
+                Specialist fire detection, suppression and safety solutions
+                for surface and underground mining operations.
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
                 <a
                   href="#solutions"
-                  className="mt-7 inline-flex rounded-md bg-orange-500 px-5 py-3 font-bold text-white transition hover:bg-orange-600"
+                  className="inline-flex items-center justify-center rounded-md bg-orange-500 px-7 py-4 text-sm font-bold text-white transition hover:bg-orange-600"
                 >
-                  Discover Our Solutions →
+                  Explore Our Solutions
+                  <span className="ml-3" aria-hidden="true">→</span>
                 </a>
+
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-md border border-white/40 bg-white/5 px-7 py-4 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/15"
+                >
+                  Contact Our Team
+                </a>
+              </div>
+
+              <div className="mt-16 flex flex-wrap items-center gap-6 border-t border-white/20 pt-7 text-sm text-slate-300">
+                <span>Established 2021</span>
+                <span className="hidden h-4 w-px bg-white/30 sm:block" />
+                <span>Surface & Underground Mining</span>
+                <span className="hidden h-4 w-px bg-white/30 sm:block" />
+                <span>Potchefstroom, South Africa</span>
               </div>
             </div>
           </div>
+        </section>
 
-        </div>
-      </section>
 
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 py-8 sm:grid-cols-3">
