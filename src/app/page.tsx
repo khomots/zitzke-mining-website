@@ -300,11 +300,18 @@ export default function Home() {
           </div>
           <div>
             <p className="leading-8 text-slate-600">
-              Established in 2021, Zitzke Mining Solutions focuses on fire
-              protection for the mining industry. Its company profile describes
-              founder experience in fire protection dating back to 2000, alongside
-              services spanning detection, suppression, monitoring and safety
-              management.
+              Zitzke Mining Solutions is a specialised consulting company with 
+              26 years experience in fire protection dedicated to safeguarding 
+              the mining industry. Established in 2021, we are built on a founda
+              tion of over two decades of unparalleled experience in the fire 
+              protection and safety sector. Our core focus is to deliver practical, 
+              site-specific fire solutions for both surface and underground min
+              ing operations, ensuring the highest standards of safety and oper
+              ational continuity.
+              Our strength lies in our deep industry knowledge, our trusted re
+              lationships with leading Original Equipment Manufacturers 
+              (OEMs), and our unwavering commitment to exceptional service 
+              delivery.
             </p>
             <p className="mt-5 leading-8 text-slate-600">
               The business is based in Potchefstroom, North West Province, South
@@ -368,12 +375,15 @@ export default function Home() {
               </p>
 
               <h2 className="mt-4 text-3xl font-black sm:text-4xl">
-                Clients listed in our company profile
+                OUR CLIENTS
               </h2>
 
               <p className="mx-auto mt-4 max-w-2xl text-slate-600">
-                The following organisations are identified in the Zitzke Mining
-                Solutions company profile.
+                 We are proud to serve a diverse range of clients within the mining sector, from major 
+                  corporations to specialised contractors. Our commitment to excellence has made us a trusted 
+                  partner to bring together Excellent Products, Specialised Labour and Tailored Fire Solutions to 
+                  ensure every project we undertake are executed to Various standards and to the Clients 
+                  specific needs
               </p>
             </div>
 
@@ -391,8 +401,7 @@ export default function Home() {
             </div>
 
             <p className="mt-8 text-center text-sm text-slate-500">
-              Client names are displayed as listed in the company profile.
-              Logos and endorsements are not implied.
+              Some of our clients
             </p>
           </div>
         </section>
