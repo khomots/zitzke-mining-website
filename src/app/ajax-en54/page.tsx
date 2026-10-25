@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import PageTopBar from "@/components/PageTopBar";
 
 const products = [
   {
@@ -53,6 +54,12 @@ export default function AjaxEN54Page() {
 
   return (
     <main className="bg-white text-slate-900">
+
+      <PageTopBar
+        pageName="AJAX EN54"
+        actionText="Request a Quotation"
+        actionHref="/#contact"
+      />
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#0B1D30] py-24 text-white md:py-32">

@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import PageTopBar from "@/components/PageTopBar";
 
 const collaborationAreas = [
   {
@@ -24,81 +25,87 @@ const collaborationAreas = [
 
 export default function PartnersPage() {
   return (
-    <main className="bg-white text-[#17212b]">
-      {/* HERO */}
-      <section className="relative isolate overflow-hidden bg-[#071523] py-28 text-white sm:py-36">
-        <div
-          className="absolute inset-0 -z-20 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/images/qualifications-bg.jpg')",
-          }}
-        />
+        <main className="bg-white text-[#17212b]">
+          <PageTopBar
+            pageName="Partners"
+            actionText="Become a Partner"
+            actionHref="/#contact"
+          />
 
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#071523]/95 via-[#071523]/85 to-[#071523]/55" />
+          {/* HERO */}
+          <section className="relative isolate overflow-hidden bg-[#071523] py-28 text-white sm:py-36">
+            <div
+              className="absolute inset-0 -z-20 bg-cover bg-center"
+              style={{
+                backgroundImage:
+                  "url('/images/qualifications-bg.jpg')",
+              }}
+            />
 
-        <div className="mx-auto max-w-7xl px-6">
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-orange-400">
-            Strategic Relationships
-          </p>
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#071523]/95 via-[#071523]/85 to-[#071523]/55" />
 
-          <h1 className="mt-5 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">
-            Building Stronger
-            <span className="block text-orange-500">
-              Partnerships.
-            </span>
-          </h1>
+            <div className="mx-auto max-w-7xl px-6">
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-orange-400">
+                Strategic Relationships
+              </p>
 
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200">
-            Zitzke Mining Solutions values strategic
-            partnerships that connect technical expertise,
-            specialised services and regional opportunities
-            across Southern Africa.
-          </p>
+              <h1 className="mt-5 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">
+                Building Stronger
+                <span className="block text-orange-500">
+                  Partnerships.
+                </span>
+              </h1>
 
-          <div className="mt-9 flex flex-wrap gap-4">
-            <a
-              href="#our-partner"
-              className="rounded-lg bg-orange-500 px-7 py-3 font-bold text-white transition hover:bg-orange-600"
-            >
-              Meet Our Partner
-            </a>
+              <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200">
+                Zitzke Mining Solutions values strategic
+                partnerships that connect technical expertise,
+                specialised services and regional opportunities
+                across Southern Africa.
+              </p>
 
-            <Link
-              href="/#contact"
-              className="rounded-lg border border-white/40 px-7 py-3 font-bold text-white transition hover:bg-white/10"
-            >
-              Contact Our Team
-            </Link>
-          </div>
-        </div>
-      </section>
+              <div className="mt-9 flex flex-wrap gap-4">
+                <a
+                  href="#our-partner"
+                  className="rounded-lg bg-orange-500 px-7 py-3 font-bold text-white transition hover:bg-orange-600"
+                >
+                  Meet Our Partner
+                </a>
 
-      {/* INTRODUCTION */}
-      <section className="bg-[#f5f6f7] py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-orange-600">
-              Our Partnerships
-            </p>
+                <Link
+                  href="/#contact"
+                  className="rounded-lg border border-white/40 px-7 py-3 font-bold text-white transition hover:bg-white/10"
+                >
+                  Contact Our Team
+                </Link>
+              </div>
+            </div>
+          </section>
 
-            <h2 className="mt-4 text-3xl font-black sm:text-4xl">
-              Connecting Expertise Across Borders
-            </h2>
+          {/* INTRODUCTION */}
+          <section className="bg-[#f5f6f7] py-20">
+            <div className="mx-auto max-w-7xl px-6">
+              <div className="max-w-3xl">
+                <p className="text-sm font-bold uppercase tracking-[0.2em] text-orange-600">
+                  Our Partnerships
+                </p>
 
-            <div className="mt-6 h-1 w-20 bg-orange-500" />
+                <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+                  Connecting Expertise Across Borders
+                </h2>
 
-            <p className="mt-7 leading-8 text-slate-600">
-              Our partnership approach focuses on developing
-              meaningful relationships with organisations
-              operating in the mining and industrial sectors.
-              Through collaboration, we aim to support
-              regional opportunities and respond to
-              specialised project requirements.
-            </p>
-          </div>
-        </div>
-      </section>
+                <div className="mt-6 h-1 w-20 bg-orange-500" />
+
+                <p className="mt-7 leading-8 text-slate-600">
+                  Our partnership approach focuses on developing
+                  meaningful relationships with organisations
+                  operating in the mining and industrial sectors.
+                  Through collaboration, we aim to support
+                  regional opportunities and respond to
+                  specialised project requirements.
+                </p>
+              </div>
+            </div>
+          </section>
 
       {/* MAPANSA PROFILE */}
       <section

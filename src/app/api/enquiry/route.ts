@@ -2,8 +2,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export const runtime = "nodejs";
-
 const recipient =
   process.env.EMAIL_TO || "info@zitzkemining.com";
 
