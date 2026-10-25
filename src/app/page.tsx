@@ -1,5 +1,6 @@
 import EnquiryForm from "../components/EnquiryForm";
 import Navbar from "../components/Navbar";
+import ProductVideo from "@/components/ProductVideo";
 
 const solutions = [
   {
@@ -436,6 +437,18 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
+                    
+                    {solution.title === "Environmental Equipment" && (
+                      <div className="mt-6">
+                        <ProductVideo
+                          title="Environmental Equipment Demonstration"
+                          videoSrc="/videos/hose-reel-introduction.mp4"
+                          buttonText="Watch Equipment Video"
+                          buttonStyle="light"
+                          description="Watch an introduction to the equipment and its operating features."
+                        />
+                      </div>
+                    )}
 
                     {/* Enquiry link */}
                     <div className="mt-8 border-t border-slate-200 pt-5">
@@ -688,38 +701,46 @@ export default function Home() {
           </div>
         </section>
 
+        <section
+          className="relative flex min-h-[440px] items-center bg-cover bg-center text-white"
+          style={{
+            backgroundImage: "url('/images/dafo-mining.jpeg')",
+          }}
+        >
+          <div className="absolute inset-0 bg-[#101b27]/75" />
 
-      <section
-        className="relative flex min-h-[440px] items-center bg-cover bg-center text-white"
-        style={{
-          backgroundImage: "url('/images/dafo-mining.jpeg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-[#101b27]/75" />
+          <div className="relative mx-auto w-full max-w-7xl px-6 py-20">
+            <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
+              Mining Vehicle Fire Protection
+            </p>
 
-        <div className="relative mx-auto w-full max-w-7xl px-6 py-20">
-          <p className="text-sm font-bold uppercase tracking-widest text-orange-400">
-            Mining Vehicle Fire Protection
-          </p>
+            <h2 className="mt-4 max-w-2xl text-4xl font-black">
+              Protecting mining vehicles and equipment.
+            </h2>
 
-          <h2 className="mt-4 max-w-2xl text-4xl font-black">
-            Protecting mining vehicles and equipment.
-          </h2>
+            <p className="mt-5 max-w-xl leading-8 text-slate-200">
+              Explore fire detection and suppression solutions
+              designed for demanding mining environments.
+            </p>
 
-          <p className="mt-5 max-w-xl leading-8 text-slate-200">
-            Explore fire detection and suppression solutions
-            designed for demanding mining environments.
-          </p>
+            {/* BUTTONS WITH SPACING */}
+            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-8">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-md bg-orange-500 px-6 py-4 font-bold text-white transition hover:bg-orange-600"
+              >
+                Enquire About Our Solutions →
+              </a>
 
-          <a
-            href="#contact"
-            className="mt-8 inline-flex rounded-md bg-orange-500 px-6 py-4 font-bold hover:bg-orange-600"
-          >
-            Enquire About Our Solutions →
-          </a>
-        </div>
-      </section>
-
+              <ProductVideo
+                title="DAFO Vehicle Fire Protection"
+                videoSrc="/videos/dafo-fire-protection.mp4"
+                buttonText="Watch DAFO in Action"
+                description="Discover how DAFO vehicle fire detection and suppression technology helps protect mining and industrial equipment."
+              />
+            </div>
+          </div>
+        </section>
       
       {/* ABOUT US, VISION & MISSION */}
       <section

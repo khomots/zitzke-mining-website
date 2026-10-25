@@ -29,17 +29,22 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#101b27] text-white shadow-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
         {/* LOGO */}
-        <Link
-          href="/#home"
-          onClick={closeMenu}
-          className="shrink-0 text-xl font-black tracking-tight"
-        >
-          ZITZKE
-          <span className="text-orange-500">.</span>
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/images/zitzke-symbol.png"
+            alt=""
+            className="h-12 w-12 rounded-lg object-contain"
+          />
 
-          <span className="mt-1 block text-[10px] font-medium uppercase tracking-[0.28em] text-slate-300">
-            Mining Solutions
-          </span>
+          <div className="flex flex-col">
+            <span className="text-2xl font-black tracking-wide text-white">
+              ZITZKE<span className="text-orange-500">.</span>
+            </span>
+
+            <span className="text-[10px] uppercase tracking-[0.25em] text-slate-300">
+              Mining Solutions
+            </span>
+          </div>
         </Link>
 
         {/* DESKTOP NAVIGATION */}
